@@ -1,9 +1,9 @@
 #[cfg(test)]
-//#[macro_use]
+#[macro_use]
 
 extern crate quickcheck;
 
-use quickcheck::{TestResult, quickcheck};
+use quickcheck::quickcheck;
 
 fn reverse<T: Clone>(xs: &[T]) -> Vec<T> {
     let mut rev = vec!();
@@ -19,14 +19,14 @@ fn reverse<T: Clone>(xs: &[T]) -> Vec<T> {
 
 #[cfg(test)]
 mod tests {
-    /*quickcheck! {
+    quickcheck! {
         fn prop(xs: Vec<isize>) -> TestResult {
             if xs.len() != 1 {
                 return TestResult::discard()
             }
             TestResult::from_bool(xs == reverse(&*xs))
         }
-    }*/
+    }
 
     fn distance(a: (f32, f32), b: (f32, f32)) -> f32 {
         (
