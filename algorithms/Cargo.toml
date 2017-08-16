@@ -5,4 +5,5 @@ authors = ["Mouna Cheikhna <cheikhnamouna@gmail.com>"]
 
 [dependencies]
     quickcheck = "0.4.1"
-    
+    quickcheck_macros = "0.4.2"
+        
