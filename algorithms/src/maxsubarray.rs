@@ -31,4 +31,18 @@ fn main() {
     let arr1: [f64; 9] = [-2.0, 1.0, -3.0, 4.0, -1.0, 2.0, 1.0, -5.0, 4.0];
     let (max, start, end) = max_subarray_kadane(&arr1);
     println!("{}, {}, {}", max, start, end);
+
+    let arr2: [f64; 1] = [3.0];
+    let (max2, start2, end2) = max_subarray_kadane(&arr2);
+    println!("{}, {}, {}", max2, start2, end2);
+
+    let arr3: [f64; 2] = [-2.0, 1.0];
+    let (max3, start3, end3) = max_subarray_kadane(&arr3);
+    println!("{}, {}, {}", max3, start3, end3);
+    
+    let arr4: [f64; 1] = [-2.0];
+    let (max4, start4, end4) = max_subarray_kadane(&arr4);
+    println!("{}, {}, {}", max4, start4, end4);
+
 }
+
